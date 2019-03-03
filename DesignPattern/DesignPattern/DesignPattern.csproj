@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A2A43E7-74D1-4811-9A8D-57BDC81D9400}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BehaviorPattern\Observer\Client.cs" />
+    <Compile Include="BehaviorPattern\Observer\ConcretePublisher.cs" />
+    <Compile Include="BehaviorPattern\Observer\ConcreteSubscriber.cs" />
+    <Compile Include="BehaviorPattern\Observer\Publisher.cs" />
+    <Compile Include="BehaviorPattern\Observer\Subscriber.cs" />
+    <Compile Include="BehaviorPattern\ResponsibilityChain\Client.cs" />
+    <Compile Include="BehaviorPattern\ResponsibilityChain\ConcreteHandleA.cs" />
+    <Compile Include="BehaviorPattern\ResponsibilityChain\ConcreteHandleB.cs" />
+    <Compile Include="BehaviorPattern\ResponsibilityChain\Handle.cs" />
+    <Compile Include="BehaviorPattern\ResponsibilityChain\Request.cs" />
+    <Compile Include="BehaviorPattern\State\Client.cs" />
+    <Compile Include="BehaviorPattern\State\ConcreteStateA.cs" />
+    <Compile Include="BehaviorPattern\State\Context.cs" />
+    <Compile Include="BehaviorPattern\State\State.cs" />
+    <Compile Include="BehaviorPattern\Strategy\Client.cs" />
+    <Compile Include="BehaviorPattern\Strategy\ConcreteStrategeA.cs" />
+    <Compile Include="BehaviorPattern\Strategy\Context.cs" />
+    <Compile Include="BehaviorPattern\Strategy\Strategy.cs" />
+    <Compile Include="CreationPattern\AbstractFactory\Client.cs" />
+    <Compile Include="CreationPattern\AbstractFactory\AbsSubFactoryA.cs" />
+    <Compile Include="CreationPattern\AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="CreationPattern\AbstractFactory\AbstractProduct.cs" />
+    <Compile Include="CreationPattern\AbstractFactory\TypeAProduct1.cs" />
+    <Compile Include="CreationPattern\Builder\Builder.cs" />
+    <Compile Include="CreationPattern\Builder\Client.cs" />
+    <Compile Include="CreationPattern\Builder\BuildMachine.cs" />
+    <Compile Include="CreationPattern\Builder\ConcreteBuilder.cs" />
+    <Compile Include="CreationPattern\Builder\Product.cs" />
+    <Compile Include="CreationPattern\Factory\Factory.cs" />
+    <Compile Include="CreationPattern\Factory\Client.cs" />
+    <Compile Include="CreationPattern\Factory\Good.cs" />
+    <Compile Include="CreationPattern\Factory\GoodA.cs" />
+    <Compile Include="CreationPattern\Factory\SubFactoryA.cs" />
+    <Compile Include="CreationPattern\ProtoType\Client.cs" />
+    <Compile Include="CreationPattern\ProtoType\ProtoType.cs" />
+    <Compile Include="CreationPattern\ProtoType\Recipe.cs" />
+    <Compile Include="CreationPattern\SimpleFactory\Product.cs" />
+    <Compile Include="CreationPattern\SimpleFactory\ProductA.cs" />
+    <Compile Include="CreationPattern\SimpleFactory\SimpleFactory.cs" />
+    <Compile Include="CreationPattern\SimpleFactory\Client.cs" />
+    <Compile Include="CreationPattern\Singleton\Singleton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="BehaviorPattern\Observer\观察者模式.md" />
+    <None Include="BehaviorPattern\ResponsibilityChain\职责链模式.md" />
+    <None Include="CreationPattern\AbstractFactory\抽象工厂.md" />
+    <None Include="CreationPattern\Builder\建造者模式.md" />
+    <None Include="CreationPattern\Factory\工厂方法.md" />
+    <None Include="CreationPattern\ProtoType\原型模式.md" />
+    <None Include="CreationPattern\SimpleFactory\简单工厂.md" />
+    <None Include="CreationPattern\Singleton\单例模式.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BehaviorPattern\Command\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
