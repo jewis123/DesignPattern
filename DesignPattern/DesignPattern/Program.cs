@@ -1,5 +1,5 @@
 ﻿
-using BehaviorPattern.StatePattern;
+using BehaviorPattern.CommandPattern;
 using System;
 
 namespace DesignPattern

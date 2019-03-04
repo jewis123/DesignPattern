@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BehaviorPattern\Command\Client.cs" />
+    <Compile Include="BehaviorPattern\Command\Commond.cs" />
+    <Compile Include="BehaviorPattern\Command\ConcreteCommond.cs" />
+    <Compile Include="BehaviorPattern\Command\Master.cs" />
+    <Compile Include="BehaviorPattern\Command\Solider.cs" />
     <Compile Include="BehaviorPattern\Observer\Client.cs" />
     <Compile Include="BehaviorPattern\Observer\ConcretePublisher.cs" />
     <Compile Include="BehaviorPattern\Observer\ConcreteSubscriber.cs" />
@@ -98,8 +103,6 @@
     <None Include="CreationPattern\SimpleFactory\简单工厂.md" />
     <None Include="CreationPattern\Singleton\单例模式.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BehaviorPattern\Command\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
