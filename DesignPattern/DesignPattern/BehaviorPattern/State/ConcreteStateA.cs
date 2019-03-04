@@ -16,7 +16,7 @@ namespace BehaviorPattern.StatePattern
 
     class ConcreteStateB : State
     {
-        //每一个具体状态必须完成两个职责： 本状态的行为管理以及趋向状态处理， 通俗地说，就是本状态下要做的事情， 以及本状态如何过渡到其他状态。
+        //每一个具体状态必须完成两个职责： 本状态的行为管理以及趋向状态处理， 通俗地说就是本状态下要做的事情， 以及本状态如何过渡到其他状态。
         public override void Handle(Context context)
         {
             //处理事务
