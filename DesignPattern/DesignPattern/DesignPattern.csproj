@@ -55,7 +55,6 @@
     <Compile Include="BehaviorPattern\Observer\Subscriber.cs" />
     <Compile Include="BehaviorPattern\ResponsibilityChain\Client.cs" />
     <Compile Include="BehaviorPattern\ResponsibilityChain\ConcreteHandleA.cs" />
-    <Compile Include="BehaviorPattern\ResponsibilityChain\ConcreteHandleB.cs" />
     <Compile Include="BehaviorPattern\ResponsibilityChain\Handle.cs" />
     <Compile Include="BehaviorPattern\ResponsibilityChain\Request.cs" />
     <Compile Include="BehaviorPattern\State\Client.cs" />
@@ -94,8 +93,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="BehaviorPattern\Command\命令模式.md" />
     <None Include="BehaviorPattern\Observer\观察者模式.md" />
     <None Include="BehaviorPattern\ResponsibilityChain\职责链模式.md" />
+    <None Include="BehaviorPattern\State\状态模式.md" />
+    <None Include="BehaviorPattern\Strategy\策略模式.md" />
     <None Include="CreationPattern\AbstractFactory\抽象工厂.md" />
     <None Include="CreationPattern\Builder\建造者模式.md" />
     <None Include="CreationPattern\Factory\工厂方法.md" />

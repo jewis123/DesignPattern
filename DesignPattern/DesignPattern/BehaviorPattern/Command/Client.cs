@@ -1,4 +1,8 @@
-﻿namespace BehaviorPattern.CommandPattern
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace BehaviorPattern.CommandPattern
 {
     class Client
     {
@@ -9,7 +13,6 @@
             Commond commondA = new ConcreteCommond(reciever);
             Commond commondB = new ConcreteCommondB(reciever);
             Commond commondC = new ConcreteCommondB(reciever);
-
             Master invoker = new Master();
 
             invoker.AddCommond(commondA);
@@ -18,5 +21,6 @@
             invoker.RemoveCommond();
             invoker.CallToExcute();
         }
+    }
     }
 }
