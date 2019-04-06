@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DesignPattern",
+    "\\DesignPattern\\BehaviorPattern",
+    "\\DesignPattern\\BehaviorPattern\\Observer"
   ],
-  "SelectedNode": "\\DesignPattern.sln",
+  "SelectedNode": "\\DesignPattern\\BehaviorPattern\\Observer\\ConcreteSubscriber.cs",
   "PreviewInSolutionExplorer": false
 }

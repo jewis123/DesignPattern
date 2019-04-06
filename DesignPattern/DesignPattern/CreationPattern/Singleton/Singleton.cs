@@ -2,6 +2,7 @@ namespace CreationPattern.Singleton
 {
     public class Singleton
     {
+        private  Singleton(){}   //限制访问域，堵死外界通过new生成实例
 
         //懒汉式-线程不安全
         // 静态变量 instance 被延迟实例化，这样做的好处是，如果没有用到该类，那么就不会实例化 instance
@@ -22,11 +23,11 @@ namespace CreationPattern.Singleton
         //线程不安全问题主要是由于 uniqueInstance 被实例化多次，采取直接实例化 uniqueInstance 的方式就不会产生线程不安全问题。
         // 但是直接实例化的方式也丢失了延迟实例化带来的节约资源的好处。
 
-        // public static Singleton instance = new Singleton();
+        // public static readonly Singleton instance = new Singleton();
 
         //双重校验锁
         private static Singleton instance;
-        private static object _lock=new object();
+        private static readonly object _lock=new object();
         public static  Singleton GetInstance()
         {
             if (instance == null)
